@@ -7379,6 +7379,18 @@ form .row:first-child .floating-label-form-group {
   background-color: #0dcaf0;
   color: #fff; }
 
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #fdfdf4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .copyright {
   background-color: #0aa1c0; }
 
