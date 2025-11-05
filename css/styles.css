@@ -7394,7 +7394,12 @@ form .row:first-child .floating-label-form-group {
   background-color: #0aa1c0; }
 
 #brandImage {
-  height: 2rem; }
+  height: 5rem; }
+@media (max-width: 768px) {
+  #brandImage {
+    height: 50px;
+  }
+}
 
 .portfolio {
   padding-top: 6rem;
@@ -7425,3 +7430,5 @@ form .row:first-child .floating-label-form-group {
 
 .btn-social {
   margin-bottom: 0.5rem; }
+
+
