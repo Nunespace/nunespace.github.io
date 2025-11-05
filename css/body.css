@@ -10,6 +10,22 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
         U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* Prevent fixed-top navbar from covering page content
+     The theme uses a fixed navbar (#mainNav). Add a top padding on the body
+     so the masthead and anchored sections aren't hidden under the nav.
+     Keep this override in body.css (preferred over editing vendor css/styles.css). */
+body {
+    padding-top: 71px; /* matches scroll offset used in js/scripts.js (71px) */
+    scroll-padding-top: 80px; /* helps fragment/hash scroll positioning */
+}
+
+@media (max-width: 575.98px) {
+    /* mobile: navbar height can be smaller; reduce padding to avoid large gap */
+    body {
+        padding-top: 56px;
+    }
+}
 /* latin */
 @font-face {
     font-family: 'SB Body';
